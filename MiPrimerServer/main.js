@@ -60,7 +60,7 @@ const colors = require('colors');
 const handleServer = function(request, response){
     response.writeHead(200, {'Content-type':'text/html'});
     response.write('<h1>Hola Mundo desde NodeJS</h1>');
-    response.end();
+    response.end(); 
 }
 
 const servidor = http.createServer(handleServer);
